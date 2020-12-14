@@ -23,4 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //Paralax
     var elemsp = document.querySelectorAll('.parallax');
     var instances = M.Parallax.init(elemsp);
+    //Toast
+    var toastElement = document.querySelector('.toast');
+    var toastInstance = M.Toast.getInstance(toastElement);
+    toastInstance.dismiss();
   });
