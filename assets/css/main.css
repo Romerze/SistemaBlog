@@ -1,0 +1,182 @@
+
+
+/** Global **/
+
+:root{
+    --white:#ffffff;
+    --black:#000;
+}
+
+body{
+    overflow-x: hidden;
+    background: #f1f1f1;
+}
+.index-1{
+    z-index: 1000;
+}
+
+/** Scalar las imagenes en cards **/
+.scalar{
+    position: relative;
+    overflow: hidden;
+}
+
+.scalar a img{
+    max-width: 100%;
+    -webkit-transition: all .5s ease;
+}
+
+.scalar:hover a img{
+    -webkit-transform: scale(1.1);
+}
+
+/** Header **/
+header nav a.brand-logo img{
+    margin-top: 10px;
+}
+
+/* Hero */
+section.section-hero{
+    margin-top: -35px;
+}
+div.hero{
+    background: url('../img/hero.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hero .container-hero{
+    position: absolute;
+    width: 50%;
+    top: 30%;
+}
+
+.hero .container-hero h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0.33rem;
+    color: var(--white);
+}
+
+.hero .container-hero p{
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 0.33rem;
+    color: var(--white);
+}
+
+/* Registro */
+.container-form{
+    padding-top: 150px;
+}
+
+.container-form form input[type="submit"]{
+    color: var(--white);
+}
+
+.container-form .card{
+    padding: 20px 15px;
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 767px){
+    .container-form .card{
+        width: 100%;
+    }
+}
+
+/* Perfil User*/
+main.user-profile .content-parallx{
+    margin-top: 80px;
+}
+
+main.user-profile .content-parallx figure{
+    margin: 0;
+    padding: 0;
+}
+
+main.user-profile .content-parallx h2.name-user{
+    color: var(--white);
+    letter-spacing: 0.33rem;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+main.user-profile article{
+    padding: 20px 15px;
+}
+
+main.user-profile article h3{
+    color: #212121;
+    letter-spacing: 0.33rem;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+main.user-profile article figcaption{
+    color: #212121;
+    letter-spacing: 0.22rem;
+    font-size: 16px;
+}
+
+main.user-profile .articles-post-user-profile{
+    padding: 50px 0;
+}
+
+/* card */
+
+.card .card-content a span{
+    font-size: 25px;
+    color: #212121;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.card .card-content a span:hover{
+    color: #1e88e5 !important;
+}
+
+.card .card-content p{
+    padding-bottom: 10px;
+}
+
+.card .card-content .card-footer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.card .card-content .card-footer a{
+    margin-right: 20px;
+}
+
+.card .card-content .card-footer a i{
+    color: #34664f;
+    font-size: 25px;
+}
+
+.autor img{
+    margin-top: -55px;
+    z-index: 100;
+    position: relative;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+}
+
+/* Footer */
+
+footer{
+    padding: 20px 0;
+}
+
+footer p.copy{
+    color: var(--white);
+    margin: 0;
+}
